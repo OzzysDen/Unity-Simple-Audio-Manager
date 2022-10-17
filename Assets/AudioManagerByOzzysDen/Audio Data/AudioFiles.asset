@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb16faeb06ac22d4487426448c8563e3, type: 3}
+  m_Name: AudioFiles
+  m_EditorClassIdentifier: 
+  Audios:
+  - name: Correct
+    audioClip: {fileID: 8300000, guid: 4c2e64ef330dc1a4fa0ba9c1575924c3, type: 3}
+    volume: 0.342
+    pitch: 1
+    isLoop: 0
+  - name: Jump
+    audioClip: {fileID: 8300000, guid: 15683d5da853745459330aae015462dc, type: 3}
+    volume: 0.594
+    pitch: 1
+    isLoop: 0
+  - name: Win
+    audioClip: {fileID: 8300000, guid: 023ebdef84566944ab5dcc6dc5fac69a, type: 3}
+    volume: 0.578
+    pitch: 1
+    isLoop: 0
+  - name: Zonk
+    audioClip: {fileID: 8300000, guid: 7942515519148ae4a85d37020734f66f, type: 3}
+    volume: 0.636
+    pitch: 1
+    isLoop: 0
