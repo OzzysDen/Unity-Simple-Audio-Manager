@@ -15,4 +15,13 @@ This Unity package was created in Unity Engine v. <i>2021.3.14f1</i>. It should 
 <li>In the Assets folder you'll find a Prefabs folder (<i>AudioManagerByOzzysDen\Prefabs</i>). Simply drag <b>AudioManager</b> prefab to your Hierarchy on your scene.
 <li>If you want to use same <b>AudioManager</b> in all of your scenes tick DontDestroy on the prefab. This will make the prefab Singleton pattern. If you want to make it a Singleton I recommend putting the <b>AudioManager</b> in your starting scene only.
 <li>You'll find another prefab in the same directory called <b>AudioPlayer</b>. This prefab has the <b>AudioSource</b> component, which is responsible for playing any Audio in your game. And it is pooled to save memory and resources. This means an instance of <b>AudioPlayer</b> will be created anytime there is no any empty (not playing) <b>AudioPlayer</b> prefab exists under <b>AudioManager</b>. Once a <b>AudioPlayer</b> is created it won't be destroyed, any of them will be used repeatedly.
+<li>There is AudioFiles ScriptableObject called <b>Audio Data</b> in Assets\AudioManagerByOzzysDen directory. Here you have to set your audio clip files in the list.
+
+![AudioData_img](https://user-images.githubusercontent.com/22709206/205247567-d78392db-4093-42ba-8e9a-21a730b43fce.png)
+
+
 <li>Finally, there is a PoolSize variable on the <b>AudioManager</b>. You can set the initial pool size according to your project's scale. Then on the start manager will create defined number of <b>AudioPlayer</b> prefab under <b>AudioManager</b> in the Hierarchy (default is 5).
+
+
+
+![AudioManager_Img](https://user-images.githubusercontent.com/22709206/205246880-56130d76-c010-4df9-9482-568f6a7fb71b.png)
