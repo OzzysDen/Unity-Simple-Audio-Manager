@@ -16,6 +16,8 @@ This Unity package was created in Unity Engine v. <i>2021.3.14f1</i>. It should 
 <li>If you want to use same <b>AudioManager</b> in all of your scenes tick DontDestroy on the prefab. This will make the prefab Singleton pattern. If you want to make it a Singleton I recommend putting the <b>AudioManager</b> in your starting scene only.
 <li>You'll find another prefab in the same directory called <b>AudioPlayer</b>. This prefab has the <b>AudioSource</b> component, which is responsible for playing any Audio in your game. And it is pooled to save memory and resources. This means an instance of <b>AudioPlayer</b> will be created anytime there is no any empty (not playing) <b>AudioPlayer</b> prefab exists under <b>AudioManager</b>. Once a <b>AudioPlayer</b> is created it won't be destroyed, any of them will be used repeatedly.
 <li>There is AudioFiles ScriptableObject called <b>Audio Data</b> in Assets\AudioManagerByOzzysDen directory. Here you have to set your audio clip files in the list.
+<li>This asset was intended to play Sound FX but you also use it to play game music as well. You just have to tick isLoop to play the game music in a loop. There will be a pseudo random Music Player I will share in the future. I'll pass the link here as soon as it is ready.
+
 
 ![AudioData_img](https://user-images.githubusercontent.com/22709206/205247567-d78392db-4093-42ba-8e9a-21a730b43fce.png)
 
